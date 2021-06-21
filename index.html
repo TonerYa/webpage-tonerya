@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,20 +27,45 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js.test"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+    <script>
+      $(window).on("load",(function(){
+          setTimeout(function(){
+              $('#largeModal').modal('show');
+          }, 4000);
+       }));
+      
+      </script>
+      
 </head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LB70MK2PBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LB70MK2PBW');
+</script>
+<!--google analytics-->>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
   <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="navbar-header"> 
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a title="TONER YA" href="#page-top">  <img src="img/toner-ya-logo.png" href="#page-top" class="logo page-scroll" alt="TONER YA"> </a>
       <!--a class="navbar-brand page-scroll" href="#page-top">TONER YA</a--> </div>
@@ -60,6 +85,78 @@
     <!-- /.navbar-collapse --> 
   </div>
 </nav>
+
+<!--pop-up-slider-->
+
+    <!-- modal -->
+    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+             <!-- carousel -->
+            <div
+                 id='carouselExampleIndicators'
+                 class='carousel slide'
+                 data-ride='carousel'
+                 >
+              <ol class='carousel-indicators'>
+                <li
+                    data-target='#carouselExampleIndicators'
+                    data-slide-to='0'
+                    class='active'
+                    ></li>
+                <!--li
+                    data-target='#carouselExampleIndicators'
+                    data-slide-to='1'
+                    ></li>
+                <li
+                    data-target='#carouselExampleIndicators'
+                    data-slide-to='2'
+                    ></li-->
+              </ol>
+              <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                  <img src="img/hp-impresora-promo.jpeg" class='img-size' alt='First slide' />
+                </div>
+                <!--div class='carousel-item'>
+                  <img class='img-size' src='https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' alt='Second slide' />
+                </div>
+                <div class='carousel-item'>
+                  <img class='img-size' src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80' alt='Second slide' />
+                </div-->
+              </div>
+              <a
+                 class='carousel-control-prev'
+                 href='#carouselExampleIndicators'
+                 role='button'
+                 data-slide='prev'
+                 >
+                <span class='carousel-control-prev-icon'
+                      aria-hidden='true'
+                      ></span>
+                <span class='sr-only'>Anterior</span>
+              </a>
+              <a
+                 class='carousel-control-next'
+                 href='#carouselExampleIndicators'
+                 role='button'
+                 data-slide='next'
+                 >
+                <span
+                      class='carousel-control-next-icon'
+                      aria-hidden='true'
+                      ></span>
+                <span class='sr-only'>Siguiente</span>
+              </a>
+            </div>
+          </div>
+          <!--div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          </div-->
+        </div>
+      </div>
+    </div>
+
 <!-- Gallery Section -->
 <div id="portfolio" class="text-center">
   <div class="container">
@@ -114,13 +211,13 @@
               <img src="img/portfolio/lex-b224000.png" class="img-responsive" alt="Tóner Lexmark B224000"> </a> </div>
           </div>
         </div>
-       " <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="col-sm-6 col-md-4 col-lg-4">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/productos/hp-90a-negro.jpg" title="Tóner HP 90A" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Tóner HP 90A</h4>
               </div>
-             <!-- <img src="img/portfolio/hp-90a-negro.png" class="img-responsive" alt="Tóner HP 90A"> </a> </div>" -->
+              <img src="img/portfolio/hp-90a-negro.png" class="img-responsive" alt="Tóner HP 90A"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4">
@@ -143,7 +240,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/productos/hp-17a-negro.jpg" title="Tóner HP 17A" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/productos/" title="Tóner HP 17A" data-lightbox-gallery="gallery1">
               <div class="hover-text">
                 <h4>Tóner HP 17A</h4>
               </div>
@@ -161,29 +258,29 @@
       <div class="row">
         <div class="section-title">
           <h2>¡COTIZA LO QUE NECESITAS!</h2>
-          <p>Llena los campos a continución y nosotros nos pondremos en contacto lo más pronto posbile.</p>
+          <!--p>Llena los campos a continución y nosotros nos pondremos en contacto lo más pronto posbile.</p-->
         </div>
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
+                <!--input type="text" id="name" class="form-control" placeholder="Nombre" required="required"-->
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Correo" required="required">
+                <!--input type="email" id="email" class="form-control" placeholder="Correo" required="required"-->
                 <p class="help-block text-danger"></p>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+            <!--textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea-->
             <p class="help-block text-danger"></p>
           </div>
           <div id="success"></div>
-          <button type="submit" class="btn btn-custom btn-lg">Enviar mensaje</button>
+          <!--button type="submit" class="btn btn-custom btn-lg">Enviar mensaje</button-->
         </form>
       </div>
     </div>
@@ -194,7 +291,7 @@
           San Pedro de los Pinos, CDMX 03800</p-->
       </div>
       <div class="contact-item">
-        <p><span><i class="fa fa-phone"></i> Teléfono</span> <a href="tel:5541372091" class="hover not-hover">+52 55 4137 2091</a> </p>
+        <p><span><i class="fa fa-phone"></i> Teléfono</span> <a href="tel:+525541372091" class="hover not-hover">+52 55 4137 2091</a> </p>
       </div>
       <div class="contact-item">
         <p><span><i class="fa fa-envelope-o"></i> Correo</span> ventas@tonerya.mx</p>
@@ -457,13 +554,14 @@
     <p>Copyright &copy; Toner Ya 2020 | Todos los derechos reservados.</p>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
